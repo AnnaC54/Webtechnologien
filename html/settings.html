@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Settings</title>
+</head>
+
+<body>
+    <div id="form-settings" class="form-settings form-outer">
+        <form action="example.php">
+            <div class="form-inner">
+                <h2 class="h2 form-headline">Profile Settings</h2>
+                <div class="form-first">
+                    <fieldset title="Base Data">
+                        <legend class="legend">Base Data</legend>
+                        <br>
+                        <div class="basedata-inner">
+                            <div class="firstname">
+                                <label for="firstname">First Name</label>
+                                <input type="Your name">
+                            </div>
+                            <br>
+                            <div class="secondname">
+                                <label for="lastname">Last Name</label>
+                                <input type="Your name">
+                            </div>
+                            <br>
+                            <div class="coffeetea">
+                                <label for="coffeetea">Coffee or Tea?</label>
+                                <select name="coffeetea" id="coffeetea">
+                                    <option value="tea">Nether nor</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="tea">Tea</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-second">
+                    <fieldset title="aboutyou"><br>
+                        <legend class="legend">Tell Something About You</legend>
+                        <div class="aboutyou-first">
+                            <textarea class="aboutyou-textarea" name="" id="">Leave a comment here</textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-third">
+                    <fieldset title="chatlayout"><br>
+                        <legend class="legend">Prefered Chat Layout</legend>
+                        <div class="chatlayout-first">
+                            <ul class="chat-list">
+                                <li> <input class="chat-answer" type="radio" name="option">Username and message in one
+                                    line
+                                </li>
+                                <br>
+                                <li> <input class="chat-answer" type="radio" name="option">Username and message in
+                                    separated
+                                    lines
+                                </li>
+
+                            </ul>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-fourth">
+                    <button class="btn btn-cancel" type="button">Cancel</button>
+                    <button class="btn btn-save" type="button">Save</button>
+                </div>
+            </div>
+    </div>
+    </form>
+
+</body>
+
+</html>
