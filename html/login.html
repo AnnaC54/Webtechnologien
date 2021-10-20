@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Login</title>
-    </head>
-    <body>
-        <img src="images/chat.png" alt="chat" style="width:100px;height:100px;">
-        <h1>Please sign in</h1>
+<html lang="en">
 
-        <fieldset>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <img src="images/chat.png" alt="chat" style="width:100px;height:100px;">
+    <h1>Please sign in</h1>
+
+    <fieldset>
         <legend>Login</legend>
-        
+
         <form action=".html" method="get">
             <label for="fname">Username</label>
             <input type="text" placeholder="Username"><br>
             <label for="lname">Password</label>
             <input type="text" placeholder="Password">
         </form>
-        
-        </fieldset>
-    
-        <a href="register.html"><button>Register</button></a>
-        <button onclick="document.location='friends.html'">Login</button>
-          
-    </body>
+
+    </fieldset>
+
+    <a href="register.html">
+        <button>Register</button>
+    </a>
+    <a href="friends.html">
+        <button>Login</button>
+    </a>
+
+</body>
+
 </html>
