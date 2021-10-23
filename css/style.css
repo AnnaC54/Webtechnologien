@@ -4,11 +4,14 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
 }
 
 body {
     max-width: 1024px;
     margin: auto;
+    color: rgb(3, 14, 24);
+
 }
 
 /* colors */
@@ -19,6 +22,20 @@ body {
 
 .bg-color-white {
     background-color: white;
+}
+
+.white {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+.red {
+    color: red;
 }
 
 /* spacing*/
@@ -35,70 +52,112 @@ body {
     padding: 1em 0 0 0;
 }
 
-/* Profile Settings */
+.pd-outer {
+    padding: 30px;
+}
+
+
 
 .h2 {
     font-size: 2em;
 }
 
-#form-settings {
-    padding: 30px;
+.mg-up-down{
+    margin: 20px 0;
 }
 
-#form-settings div {
-    padding: 5px;
-}
+/* Profile Settings */
 
 #form-settings fieldset {
-    margin: 15px;
-    border: dotted 1px;
+    border: none;
 }
 
 .grid-container {
-    display: grid; 
+    display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 3fr;
 }
 
 
-.form-second{
-    padding: 10px;
-}
-
-.aboutyou-textarea{
-    min-width: 100%; 
+.aboutyou-textarea {
+    width: 100%;
     min-height: 150px;
-    color: lightgray; 
+    color: lightgray;
     font-size: 0.9em;
-  
+
 }
 
-.chat-answer{
-    padding-right: 20px;
-}
 
-.form-third li{
+
+.form-third li {
     list-style-type: none;
-    padding-left:10px;
 }
 
-.form-fourth{
-    display: flex; 
+.form-fourth {
+    display: flex;
     justify-content: center;
 }
 
+/* Profile */
+
+.main-profile{
+background-color: white;
+}
+
+.cv{
+    display: flex;
+ 
+}
+
+.personality-one{
+    width: 15%;
+}
+
+.personality-two{
+    display: flex; 
+    justify-content: space-between; 
+    flex-direction: column;
+}
+
+.paragraph-first{
+    max-width: 70%;
+}
+
+/* button style*/
+
 .btn {
-    width: 80px;
+    min-width: 80px;
     height: 30px;
     border: none;
     color: white;
+    background-color: rgb(100, 182, 250);
 }
 
-.btn-cancel{
+.btn-large {
+    padding: 0 10px;
+}
+
+.btn-cancel {
     background-color: lightgrey;
     margin-right: 10px;
 }
 
-.btn-save{
+
+
+.btn-save {
     background-color: rgb(100, 182, 250);
+}
+
+.btn:hover {
+    background-color: rgb(87, 87, 87);
+    color: white;
+
+}
+
+.btn-remove:hover {
+    background-color: rgb(179, 5, 5);
+}
+
+.btn-save:hover{
+    background-color: rgb(44, 44, 224);
 }
