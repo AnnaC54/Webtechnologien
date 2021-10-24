@@ -2,20 +2,34 @@
 
 * {
     margin: 0;
-    padding: 0;
+        padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
-    
+
 }
 
-body {
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://wallpaperaccess.com/full/1288076.jpg);
+
+}
+
+
+.body-inner {
     max-width: 1024px;
     margin: auto;
     color: rgb(3, 14, 24);
-    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../images/WhatsApp\ Image\ 2021-10-23\ at\ 15.57.45.jpeg);
 
 
 
+}
+
+.heading {
+    background-color: rgba(26, 34, 82, 0.411);
+    width: 100vw;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
 }
 
 /* colors */
@@ -60,8 +74,8 @@ body {
     padding: 30px;
 }
 
-.pd-light{
-    padding: 0.9em 0  0.9em  1.8em; 
+.pd-light {
+    padding: 0.9em 0 0.9em 1.8em;
 
 }
 
@@ -72,7 +86,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.mg-up-down{
+.mg-up-down {
     margin: 20px 0;
 }
 
@@ -96,13 +110,13 @@ body {
 
 }
 
-.chat-list{
-    list-style-type: none; 
-  
+.chat-list {
+    list-style-type: none;
+
 }
 
 
-input[type="radio"]{
+input[type="radio"] {
     margin-right: 5px;
     margin-bottom: 10px;
 }
@@ -115,34 +129,34 @@ input[type="radio"]{
 }
 
 ::placeholder {
-    padding-top:4x;
-    padding-left:2px;
-  }
+    padding-top: 4x;
+    padding-left: 2px;
+}
 
 
 
 
 /* Profile */
 
-.main-profile{
-background-color: white;
+.main-profile {
+    background-color: white;
 }
 
-.cv{
+.cv {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.personality-two{
-display: flex; 
-justify-content: center; 
-flex-direction: column;
-align-items: center;
+.personality-two {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.personality-two p{
+.personality-two p {
     margin-bottom: 5px;
 }
 
@@ -183,29 +197,29 @@ align-items: center;
     background-color: rgb(179, 5, 5);
 }
 
-.btn-save:hover{
+.btn-save:hover {
     background-color: rgb(44, 44, 224);
 }
 
 
 @media (min-width: 600px) {
 
-    .inner-body{
-        display: flex; 
+    .inner-body {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
 
-   .main-profile{
-       width: 80%;
-   }
-    
-    .personality-two{
-        display: flex; 
-        justify-content: space-between; 
+    .main-profile {
+        width: 80%;
+    }
+
+    .personality-two {
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
     }
-    
-   
+
+
 }
