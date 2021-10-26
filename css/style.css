@@ -32,6 +32,12 @@ body{
     text-align: center;
 }
 
+.chat-background{
+    background-color: white;
+    width: 19em;
+    padding: 20px 5px;
+}
+
 /* colors */
 
 .bg-color-lg {
