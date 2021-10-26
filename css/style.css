@@ -38,6 +38,10 @@ body{
     padding: 20px 0.5em;
 }
 
+.center {
+    margin: auto;
+}
+
 /* colors */
 
 .bg-color-lg {
@@ -220,7 +224,6 @@ input[type="radio"] {
     background-color: rgb(44, 44, 224);
 }
 
-
 @media (min-width: 600px) {
 
     .inner-body {
@@ -242,3 +245,4 @@ input[type="radio"] {
 
 
 }
+
