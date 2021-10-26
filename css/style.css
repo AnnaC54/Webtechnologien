@@ -62,6 +62,10 @@ body{
     padding: 1em 0;
 }
 
+.pd-up-down-light{
+    padding: 0.4em 0;
+}
+
 .pd-left-right {
     padding: 0 1em;
 }
