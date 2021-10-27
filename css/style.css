@@ -38,10 +38,6 @@ body{
     padding: 20px 0.5em;
 }
 
-.center {
-    margin: auto;
-}
-
 /* colors */
 
 .bg-color-lg {
@@ -224,6 +220,7 @@ input[type="radio"] {
     background-color: rgb(44, 44, 224);
 }
 
+
 @media (min-width: 600px) {
 
     .inner-body {
@@ -246,3 +243,25 @@ input[type="radio"] {
 
 }
 
+
+@media (min-width: 100px) {
+
+    .inner-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .main-profile {
+        width: 80%;
+    }
+
+    .personality-two {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+}
