@@ -38,6 +38,13 @@ body{
     padding: 20px 0.5em;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 /* colors */
 
 .bg-color-lg {
