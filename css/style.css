@@ -244,7 +244,7 @@ input[type="radio"] {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 100px) {
 
     .inner-body {
         display: flex;
