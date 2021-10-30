@@ -54,6 +54,7 @@ body{
     clear: left;
     width: 50%;
     text-align: right;
+    margin: 0.5em;
 }
 .login-register-input {
   display: inline-block;
@@ -62,6 +63,21 @@ body{
 
 .fieldset-login {
     border: none;
+}
+
+.login-register-mg {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login-register-mg-up-down {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
 }
 
 /* colors */
@@ -244,6 +260,19 @@ input[type="radio"] {
 
 .btn-save:hover {
     background-color: rgb(44, 44, 224);
+}
+
+.btn-register {
+    min-width: 80px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: lightgray;
+    margin: 0 10px;
+}
+
+.btn-register:hover {
+    background-color: gray;
 }
 
 
