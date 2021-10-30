@@ -43,6 +43,25 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border-radius: 50%
+}
+
+/* tests */
+
+.login-register-label{
+    display: inline-block;
+    /*float: left;*/
+    clear: left;
+    width: 50%;
+    text-align: right;
+}
+.login-register-input {
+  display: inline-block;
+  /*float: left;*/
+}
+
+.fieldset-login {
+    border: none;
 }
 
 /* colors */
