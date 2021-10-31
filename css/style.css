@@ -275,6 +275,10 @@ input[type="radio"] {
     background-color: gray;
 }
 
+.btn-wide:hover {
+    background-color: gray;
+}
+
 
 @media (min-width: 600px) {
 
