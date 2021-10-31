@@ -66,8 +66,9 @@ body{
 }
 
 .login-register-mg {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 .login-register-mg-up-down {
@@ -135,6 +136,11 @@ body{
 
 .h2 {
     font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.h3 {
+    font-size: 1.5em;
     color: rgb(255, 255, 255);
 }
 
@@ -224,6 +230,7 @@ input[type="radio"] {
     border: none;
     color: white;
     background-color: rgb(100, 182, 250);
+    border-radius: 10px;
 }
 
 .btn-wide {
@@ -233,6 +240,7 @@ input[type="radio"] {
     color: white;
     background-color: rgb(100, 182, 250);
     padding:0px 10px;
+    border-radius: 10px;
 }
 
 .btn-large {
@@ -269,6 +277,7 @@ input[type="radio"] {
     color: white;
     background-color: lightgray;
     margin: 0 10px;
+    border-radius: 10px;
 }
 
 .btn-register:hover {
