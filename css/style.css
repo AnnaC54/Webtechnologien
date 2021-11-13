@@ -5,7 +5,6 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
-
 }
 
 body{
@@ -13,22 +12,16 @@ body{
 
 }
 
-
 .body-inner {
     max-width: 1024px;
     margin: auto;
     color: rgb(3, 14, 24);
-
-
-
 }
 
 .heading {
-    background-color: rgba(26, 34, 82, 0.411);
     width: 100vw;
     padding: 20px 0;
-    position: sticky;
-    top: 0;
+   
     text-align: center;
 }
 
@@ -44,6 +37,14 @@ body{
     margin-right: auto;
     width: 50%;
     border-radius: 50%;
+}
+
+.form-first, .form-second, .form-third{
+    border-radius: 10px;
+}
+
+.coffeetea-label {
+    margin-top: 20px;
 }
 
 /* tests */
@@ -133,10 +134,7 @@ body{
 
 .pd-light {
     padding: 0.9em 0 0.9em 1.8em;
-
 }
-
-
 
 .h2 {
     font-size: 2em;
@@ -162,8 +160,6 @@ body{
     border: none;
 }
 
-
-
 .aboutyou-textarea {
     width: 100%;
     min-height: 150px;
@@ -177,13 +173,10 @@ body{
 
 }
 
-
 input[type="radio"] {
     margin-right: 5px;
     margin-bottom: 10px;
 }
-
-
 
 .form-fourth {
     display: flex;
@@ -192,38 +185,15 @@ input[type="radio"] {
 
 ::placeholder {
     padding-top: 4x;
-    padding-left: 2px;
 }
-
-
-
 
 /* Profile */
 
 .main-profile {
     background-color: white;
-}
-
-.cv {
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.personality-two {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.personality-two p {
-    margin-bottom: 5px;
-}
-
-
-
+} 
 
 
 /* button style*/
@@ -292,6 +262,24 @@ input[type="radio"] {
     background-color: gray;
 }
 
+.para-one {
+    line-height: 2.0;
+}
+
+.friends-list a {
+
+color: rgb(88, 88, 190);
+text-decoration: none;
+}
+
+.friends-list li {
+    list-style-type: none;
+    list-style-image: url(/images/spacecraft-spaceship-svgrepo-com.svg);
+    font-size: 40px;
+}
+
+/* ____________ FRIENDS _______________ */ 
+
 
 @media (min-width: 600px) {
 
@@ -303,7 +291,7 @@ input[type="radio"] {
 
 
     .main-profile {
-        width: 80%;
+        width: 800px;
     }
 
     .personality-two {
@@ -312,9 +300,7 @@ input[type="radio"] {
         flex-direction: column;
     }
 
-
 }
-
 
 @media (min-width: 100px) {
 
@@ -324,9 +310,8 @@ input[type="radio"] {
         align-items: center;
     }
 
-
     .main-profile {
-        width: 80%;
+        width: 60%;
     }
 
     .personality-two {
@@ -334,6 +319,5 @@ input[type="radio"] {
         justify-content: space-between;
         flex-direction: column;
     }
-
 
 }
