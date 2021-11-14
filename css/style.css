@@ -7,7 +7,7 @@
     font-size: 0.9rem;
 }
 
-body{
+body {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://wallpaperaccess.com/full/1288076.jpg);
 
 }
@@ -21,11 +21,11 @@ body{
 .heading {
     width: 100vw;
     padding: 20px 0;
-   
+
     text-align: center;
 }
 
-.chat-background{
+.chat-background {
     background-color: white;
     width: 18em;
     padding: 20px 0.5em;
@@ -39,7 +39,9 @@ body{
     border-radius: 50%;
 }
 
-.form-first, .form-second, .form-third{
+.form-first,
+.form-second,
+.form-third {
     border-radius: 10px;
 }
 
@@ -49,7 +51,7 @@ body{
 
 /* tests */
 
-.login-register-label{
+.login-register-label {
     display: inline-block;
     /*float: left;*/
     clear: left;
@@ -57,9 +59,10 @@ body{
     text-align: right;
     margin: 0.5em;
 }
+
 .login-register-input {
-  display: inline-block;
-  /*float: left;*/
+    display: inline-block;
+    /*float: left;*/
 }
 
 .fieldset-login {
@@ -112,7 +115,7 @@ body{
     padding: 1em 0;
 }
 
-.pd-up-down-light{
+.pd-up-down-light {
     padding: 0.4em 0;
 }
 
@@ -124,7 +127,7 @@ body{
     padding: 1em 0 0 0;
 }
 
-.pd-list{
+.pd-list {
     padding: 0.4em 0 0.4em 0.4em;
 }
 
@@ -193,7 +196,14 @@ input[type="radio"] {
     background-color: white;
     border-radius: 10px;
     display: flex;
-} 
+}
+
+
+/*Register Form*/
+
+.register-form-inner {
+    border-radius: 10px;
+}
 
 
 /* button style*/
@@ -213,7 +223,7 @@ input[type="radio"] {
     border: none;
     color: white;
     background-color: rgb(100, 182, 250);
-    padding:0px 10px;
+    padding: 0px 10px;
     border-radius: 10px;
 }
 
@@ -268,8 +278,8 @@ input[type="radio"] {
 
 .friends-list a {
 
-color: rgb(88, 88, 190);
-text-decoration: none;
+    color: rgb(88, 88, 190);
+    text-decoration: none;
 }
 
 .friends-list li {
@@ -278,7 +288,7 @@ text-decoration: none;
     font-size: 40px;
 }
 
-/* ____________ FRIENDS _______________ */ 
+/* ____________ FRIENDS _______________ */
 
 
 @media (min-width: 600px) {
@@ -300,6 +310,9 @@ text-decoration: none;
         flex-direction: column;
     }
 
+
+
+
 }
 
 @media (min-width: 100px) {
@@ -320,4 +333,12 @@ text-decoration: none;
         flex-direction: column;
     }
 
+
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    .login-register-label {
+        text-align: left;
+    }
 }

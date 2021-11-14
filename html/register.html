@@ -15,33 +15,38 @@
         <h1 class="h2 pd-up-down">Register yourself</h1>
     </div>
 
-    <div class="bg-color-white pd-up-down pd-left-right login-register-mg login-register-mg-up-down">
+    <div class=" pd-up-down pd-left-right login-register-mg login-register-mg-up-down">
         <div>
             <fieldset class="fieldset-login">
                 <!-- <legend>Login</legend> -->
                 <div class="mg-up-down">
-                    <form>
-                        <label for="fname" class="login-register-label">Username</label>
-                        <input type="text" placeholder="Username" class="login-register-input"><br>
-                        <label for="pword" class="login-register-label">Password</label>
-                        <input type="password" placeholder="Password" class="login-register-input"><br>
-                        <label for="cpword" class="login-register-label">Confirm Password</label>
-                        <input type="password" placeholder="Confirm Password" class="login-register-input">
+                    <form onsubmit="pass()">
+                        <div class="bg-color-white pd-outer mg-up-down register-form-inner">
+                            <label for="fname" class="login-register-label">Username</label>
+                            <input type="text" placeholder="Username" class="login-register-input" minlength="5"><br>
+                            <label for="pword" class="login-register-label">Password</label>
+                            <input type="password" placeholder="Password" class="login-register-input" minlength="8"
+                                required><br>
+                            <label for="cpword" class="login-register-label">Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" class="login-register-input"
+                                minlength="8" required>
+                        </div>
+                        <div class="div-btn">
+                            <a href="login.html">
+                                <button class="btn-register">Cancel</button>
+                            </a>
+                            <a href="friends.html">
+                                <button class="btn-wide">Create Account</button>
+                            </a>
+                        </div>
                     </form>
                 </div>
             </fieldset>
         </div>
     </div>
 
-    <div class="div-btn">
-        <a href="login.html">
-            <button class="btn-register">Cancel</button>
-        </a>
-        <a href="friends.html">
-            <button class="btn-wide">Create Account</button>
-        </a>
-    </div>
 
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
