@@ -42,13 +42,31 @@ xmlhttp.send();
 
 
 // password check 
+let username = document.getElementById("username");
+let password1;
+let password2;
 
 function pass()
-{
-if(document.Formular.Passwort1.value != document.Formular.Passwort2.value &  document.Formular.Passwort2.value != document.Formular.Passwort1.value)
-{
-	alert("Die angegebenen Passwörter stimmen nicht überein!");
-	document.Formular.Passwort2.focus();
-	return false;
-}
+
+password1 = document.getElementById("password").value;
+password2 = document.getElementById("password-rep").value;
+
+    // If password not entered
+    if (password1 == '')
+        alert ("Please enter Password");
+          
+    // If confirm password not entered
+    else if (password2 == '')
+        alert ("Please enter confirm password");
+          
+    // If Not same return False.    
+    else if (password1 != password2) {
+        alert ("\nPassword did not match: Please try again...")
+        return false;
+    }
+
+    // If same return True.
+    else{
+        alert("Password Match: Welcome to GeeksforGeeks!")
+        return true;
 }

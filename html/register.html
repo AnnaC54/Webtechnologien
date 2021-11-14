@@ -20,22 +20,23 @@
             <fieldset class="fieldset-login">
                 <!-- <legend>Login</legend> -->
                 <div class="mg-up-down">
-                    <form onsubmit="pass()">
+                    <form onsubmit=" pass()" autocomplete="on">
                         <div class="bg-color-white pd-outer mg-up-down register-form-inner">
                             <label for="fname" class="login-register-label">Username</label>
-                            <input type="text" placeholder="Username" class="login-register-input" minlength="5"><br>
+                            <input id="username" type="text" placeholder="Username" class="login-register-input"
+                                minlength="5"><br>
                             <label for="pword" class="login-register-label">Password</label>
-                            <input type="password" placeholder="Password" class="login-register-input" minlength="8"
-                                required><br>
+                            <input id="password" type="password" placeholder="Password"
+                                class="login-register-input"><br>
                             <label for="cpword" class="login-register-label">Confirm Password</label>
-                            <input type="password" placeholder="Confirm Password" class="login-register-input"
-                                minlength="8" required>
+                            <input id="password-rep" type="password" placeholder="Confirm Password"
+                                class="login-register-input">
                         </div>
                         <div class="div-btn">
                             <a href="login.html">
                                 <button class="btn-register">Cancel</button>
                             </a>
-                            <a href="friends.html">
+                            <a>
                                 <button class="btn-wide">Create Account</button>
                             </a>
                         </div>
