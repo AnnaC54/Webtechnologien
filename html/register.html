@@ -19,36 +19,37 @@
         <fieldset class="fieldset-login">
             <legend></legend>
             <div class="mg-up-down">
-                <form name="myForm" action="friends.html" onsubmit="return validateForm()"  method="">
+                <form name="myForm" action="friends.html" onsubmit="return validateForm()" method="">
                     <div class="bg-color-white pd-outer mg-up-down register-form-inner">
 
                         <!-- username -->
                         <div class="username">
                             <label for="fname" class="login-register-label">Username</label>
                             <input name="fname" id="username" type="text" placeholder="Username"
-                                class="login-register-input" ><br>
+                                class="login-register-input" minlength="3" required><br>
                         </div>
 
                         <!-- password I -->
                         <div class="passwordOne">
                             <label for="pword" class="login-register-label">Password</label>
                             <input name="password" id="password" type="password" placeholder="Password"
-                                class="login-register-input" ><br>
+                                class="login-register-input"  onchange="passwordNICHT()"><br>
                         </div>
 
                         <!-- password II -->
                         <div class="passwordTwo">
                             <label for="cpword" class="login-register-label">Confirm Password</label>
-                            <input name="passwordConfirmation" id="password-rep" type="password" placeholder="Confirm Password"
-                                class="login-register-input" >
+                            <input name="passwordConfirmation" id="password-rep" type="password"
+                                placeholder="Confirm Password" class="login-register-input" 
+                                onchange="passwordNICHT()"><span id='message'></span>
                         </div>
                     </div>
                     <div class="div-btn">
                         <button class="btn btn-register"><a href="login.html">Cancel</a></button>
-                        <input type="submit" class="btn btn-wide" value="Create Account"></input>
+                        <input id="submit" type="submit" class="btn btn-wide" value="Create Account" ></input>
                     </div>
                 </form>
-               
+
 
             </div>
         </fieldset>

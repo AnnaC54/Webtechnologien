@@ -37,35 +37,29 @@ xmlhttp.open("GET", window.chatServer + "/" + window.chatCollectionId +
 
 // ******************* password check *******************
 
-function password() {
+function passwordNICHT() {
 
     let password1 = document.forms["myForm"]["password"].value;
     let password2 = document.forms["myForm"]["passwordConfirmation"].value;
-    let boolean = false;
-    // If password not entered
-        if (password1 == '') {
-            alert("Please enter Password");
-            return false;
-        }
 
-        // If confirm password not entered
-        else if (password2 == '') {
-            alert("Please enter confirm password");
-            return false;
-        }
+    if (password1 == password2) {
+        document.getElementById('message').style.color = 'green';
+        document.getElementById('message').innerHTML = 'matching';
+        alert("Password Match: Welcome to GeeksforGeeks!")
+       // document.getElementById('submit').disabled = false;
+    }
 
-        // If Not same return False.    
-        else if (password1 != password2) {
-            alert("\nPassword did not match: Please try again...")
-            return false;
-        }
+    else if (password1 == '' || password2 == '' && password1 != password2) {
+        alert("Please enter Password");
+        //document.getElementById('submit').disabled = true;
+    }
 
-        // If same return True.
-        else {
-            alert("Password Match: Welcome to GeeksforGeeks!")
-            return true;
-        }
-    
+    else {
+        document.getElementById('message').style.color = 'red';
+        document.getElementById('message').innerHTML = 'not matching';
+        alert("\nPassword did not match: Please try again...")
+        //document.getElementById('submit').disabled = true;
+    }
 }
 
 // ******************* Server Request if user exists ON SUBMIT  *******************
@@ -78,11 +72,8 @@ function validateForm() {
     var serverRequest = "https://online-lectures-cs.thi.de/chat/" + collectionId + "/user/" + user;
     console.log(user);
 
-    //check password
-    passwordCheckResult = password();
-       
     // no username given 
-     if (user == "") {
+    if (user == "") {
         alert("Pls enter your username");
         return false;
     }
