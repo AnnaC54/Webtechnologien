@@ -16,38 +16,41 @@
     </div>
 
     <div class=" pd-up-down pd-left-right login-register-mg login-register-mg-up-down">
-        <div>
-            <fieldset class="fieldset-login">
-                <!-- <legend>Login</legend> -->
-                <div class="mg-up-down">
-                    <form onsubmit=" pass()" autocomplete="on">
-                        <div class="bg-color-white pd-outer mg-up-down register-form-inner">
+        <fieldset class="fieldset-login">
+            <div class="mg-up-down">
+                <form autocomplete="on">
+                    <div class="bg-color-white pd-outer mg-up-down register-form-inner">
+
+                        <!-- username -->
+                        <div class="username">
                             <label for="fname" class="login-register-label">Username</label>
                             <input id="username" type="text" placeholder="Username" class="login-register-input"
-                                minlength="5"><br>
+                                minlength="3" required><br>
+                        </div>
+
+                        <!-- password I -->
+                        <div class="passwordOne">
                             <label for="pword" class="login-register-label">Password</label>
                             <input id="password" type="password" placeholder="Password"
-                                class="login-register-input"><br>
+                                class="login-register-input" minlength="3" required><br>
+                        </div>
+
+                        <!-- password II -->
+                        <div class="passwordTwo">
                             <label for="cpword" class="login-register-label">Confirm Password</label>
                             <input id="password-rep" type="password" placeholder="Confirm Password"
-                                class="login-register-input">
+                                class="login-register-input" required>
                         </div>
-                        <div class="div-btn">
-                            <a href="login.html">
-                                <button class="btn-register">Cancel</button>
-                            </a>
-                            <a>
-                                <button class="btn-wide">Create Account</button>
-                            </a>
-                        </div>
-                    </form>
-                </div>
-            </fieldset>
-        </div>
+                    </div>
+                    <div class="div-btn">
+                        <button class="btn-register"><a href="login.html"></a>Cancel</a></button>
+                        <button class="btn-wide"><a href="friends.html"></a>Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </fieldset>
     </div>
-
-
-    <script src="/js/script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 
 </html>
