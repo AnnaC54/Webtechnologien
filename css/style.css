@@ -291,6 +291,11 @@ input[type="radio"] {
 /* ____________ FRIENDS _______________ */
 
 
+.number-right {
+    float:right;
+
+}
+
 @media (min-width: 600px) {
 
     .inner-body {

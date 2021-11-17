@@ -11,7 +11,7 @@
 
 <body>
     <script src="/js/scriptFriends.js"></script>
-    
+
     <div class="inner-body bg-color-lg pd-outer">
         <div class="heading">
             <h2 class=" h2 pd-up-down">Friends</h2>
@@ -32,7 +32,8 @@
         <div class="bg-color-white pd-list " style="width:230px; border-radius: 10px;">
 
             <ul class="friends-list pd-light">
-                <li><A HREF="chat.html"> Tom (3)</A></li>
+                <li><A HREF="chat.html"> Tom</A> 
+                <span class="number-right pd-light">3</span></li>
                 <li><A HREF="chat.html"> Marvin (1)</A></li>
                 <li><A HREF="chat.html"> Tick</A></li>
                 <li><A HREF="chat.html"> Trick</A></li>
@@ -49,10 +50,15 @@
         <!--<p class="cv"><input type="text" placeholder="New Message" class="pd-up-down-light"> 
 <button class="btn" type="button">Send</button></p>
 </body> -->
-        <p><input type="text" placeholder="Add to friend list" class="pd-up-down-light" style="border-radius: 10px;">
+        <p>
+        <form id="add" action>
+            <input type="text" name="friend" list="friendsList" id="friendsAdd" placeholder="Add to friend list" class="pd-up-down-light" style="border-radius: 10px;">
+            <datalist id="friendsList"></datalist>
+
             <a href="friends.html">
-                <button class="btn" type="button">Add</button>
+                <button class="btn" >Add</button>
             </a>
+        </form>
         </p>
 
     </div>
