@@ -17,40 +17,43 @@
 
     <div class=" pd-up-down pd-left-right login-register-mg login-register-mg-up-down">
         <fieldset class="fieldset-login">
+            <legend></legend>
             <div class="mg-up-down">
-                <form autocomplete="on">
+                <form name="myForm" action="friends.html" onsubmit="return validateForm()"  method="">
                     <div class="bg-color-white pd-outer mg-up-down register-form-inner">
 
                         <!-- username -->
                         <div class="username">
                             <label for="fname" class="login-register-label">Username</label>
-                            <input id="username" type="text" placeholder="Username" class="login-register-input"
-                                minlength="3" required><br>
+                            <input name="fname" id="username" type="text" placeholder="Username"
+                                class="login-register-input" ><br>
                         </div>
 
                         <!-- password I -->
                         <div class="passwordOne">
                             <label for="pword" class="login-register-label">Password</label>
-                            <input id="password" type="password" placeholder="Password"
-                                class="login-register-input" minlength="3" required><br>
+                            <input name="password" id="password" type="password" placeholder="Password"
+                                class="login-register-input" ><br>
                         </div>
 
                         <!-- password II -->
                         <div class="passwordTwo">
                             <label for="cpword" class="login-register-label">Confirm Password</label>
-                            <input id="password-rep" type="password" placeholder="Confirm Password"
-                                class="login-register-input" required>
+                            <input name="passwordConfirmation" id="password-rep" type="password" placeholder="Confirm Password"
+                                class="login-register-input" >
                         </div>
                     </div>
                     <div class="div-btn">
-                        <button class="btn-register"><a href="login.html"></a>Cancel</a></button>
-                        <button class="btn-wide"><a href="friends.html"></a>Create Account</button>
+                        <button class="btn btn-register"><a href="login.html">Cancel</a></button>
+                        <input type="submit" class="btn btn-wide" value="Create Account"></input>
                     </div>
                 </form>
+               
+
             </div>
         </fieldset>
     </div>
-<script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
