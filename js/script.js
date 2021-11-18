@@ -40,7 +40,6 @@ var serverRequest = "https://online-lectures-cs.thi.de/chat/" + collectionId + "
 var user = document.getElementById("username");
 let password1 = document.getElementById("password");
 let password2 = document.getElementById("password-rep");
-var validation;
 var userName;
 /*
 // Chat Server URL und Collection ID als Teil der URL
@@ -53,7 +52,7 @@ xmlhttp.open("GET", window.chatServer + "/" + window.chatCollectionId +
 
 function passwordCheck() {
 
-    if (password1 == password2) {
+    if (password1.value == password2.value) {
         document.getElementById('message').style.color = 'green';
         document.getElementById('message').innerHTML = 'matching';
     }
@@ -90,19 +89,25 @@ function checkExistState(userName) {
 
 document.getElementById("registrationForm").onsubmit = function (evt) {
 
+    var validation = true;
     user.style.border = "1px solid green";
     password1.style.border = "1px solid green";
     password2.style.border = "1px solid green";
 
 
-
     if (user.value.length < 3) {
         user.style.border = "1px solid red";
         validation = false;
+        alert("alarm")
     }
 
     if (password1.value.length < 8) {
         password1.style.border = "1px solid red";
+        validation = false;
+    }
+
+    if (password2.value.length < 8) {
+        password2.style.border = "1px solid red";
         validation = false;
     }
 
@@ -111,13 +116,15 @@ document.getElementById("registrationForm").onsubmit = function (evt) {
         validation = false;
     }
 
-    if (checkExistState(user.value)) {
+    if (checkExistState(user.value) == false ) {
         user.style.border = "1px solid red";
         validation = false;
     }
 
+
     if (validation) {
         alert("Registrierung erfolgreich")
+
     }
 
     else {
