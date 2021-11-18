@@ -19,7 +19,7 @@
         <fieldset class="fieldset-login">
             <legend></legend>
             <div class="mg-up-down">
-                <form name="myForm" action="friends.html" onsubmit="return validateForm()" method="">
+                <form id="registrationForm" name="myForm" action="friends.html"  method="">
                     <div class="bg-color-white pd-outer mg-up-down register-form-inner">
 
                         <!-- username -->
@@ -33,7 +33,7 @@
                         <div class="passwordOne">
                             <label for="pword" class="login-register-label">Password</label>
                             <input name="password" id="password" type="password" placeholder="Password"
-                                class="login-register-input"  onchange="passwordNICHT()"><br>
+                                class="login-register-input"  onchange="passwordCheck()"><br>
                         </div>
 
                         <!-- password II -->
@@ -41,7 +41,7 @@
                             <label for="cpword" class="login-register-label">Confirm Password</label>
                             <input name="passwordConfirmation" id="password-rep" type="password"
                                 placeholder="Confirm Password" class="login-register-input" 
-                                onchange="passwordNICHT()"><span id='message'></span>
+                                onchange="passwordCheck()"><span id='message'></span>
                         </div>
                     </div>
                     <div class="div-btn">
