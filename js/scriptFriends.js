@@ -21,7 +21,7 @@ xmlhttp.onreadystatechange = function () {
         var list = document.getElementById("friendsList");
         data.forEach(element => {
             var listOption = document.createElement("option");
-            listOption.value=element;
+            listOption.value = element;
             list.appendChild(listOption);
         });
     }
