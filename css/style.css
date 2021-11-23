@@ -27,7 +27,7 @@ body {
 
 .chat-background {
     background-color: white;
-    width: 18em;
+    width: 30em;
     padding: 20px 0.5em;
 }
 
@@ -47,6 +47,36 @@ body {
 
 .coffeetea-label {
     margin-top: 20px;
+}
+
+.messagebox{
+    background-color: grey;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.leftdiv{
+    width: 33%;
+    text-align: left;
+}
+
+.centerdiv{
+    width: 33%;
+    text-align: center;
+}
+
+.rightdiv{
+    width: 33%;
+    text-align: right;
+}
+
+#chat{
+    display:flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
 }
 
 /* tests */

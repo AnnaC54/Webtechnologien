@@ -11,7 +11,8 @@
 
 <body>
     <div class="inner-body bg-color-lg pd-outer">
-        <div class="heading">            <h2 class=" h2 pd-up-down">Chat with Tom</h2>
+        <div class="heading">
+            <h2 class=" h2 pd-up-down">Chat with Tom</h2>
         </div>
         <header class="header">
             <nav class="navigation">
@@ -22,18 +23,52 @@
             </nav>
             <br>
         </header>
-   <!-- <A HREF="friends.html" Back</A>
+        <!-- <A HREF="friends.html" Back</A>
     &verbar;
     <A HREF="profile.html"> Profile</A>
     &verbar;
     <A class="red " HREF="friends.html"> Remove Friend</A> -->
-    <div class="chat-background"  style="border-radius: 10px;"><pre class="black">Tom: Hallo, Welt!                            14:02
+        <div class="chat-background" style="border-radius: 10px;" id = "chat">
+           <!--<div style="width: 20%; float: left;">
+                <ul style="list-style: none;" id = "from">
+                <li> Freund1</li>
+                <li> Freund2</li>
+            </ul> </div>
+   <div style="width: 60%; float: left;" >
+    <ul style="list-style: none;" id = "textmessage">
+        <li> Nachricht1</li>
+        <li> nachricht2</li>
+    </ul></div>
+   <div style="width: 20%; float: left; text-align: right;"> 
+    <ul style="list-style: none;" id = "time">
+        <li> Zeit1</li>
+        <li> Zeit2</li>
+    </ul>
+--></div>
+            <!-- <ul>
+                <li> Hallo</li>
+            </ul>
+
+           <pre class="black">Tom: Hallo, Welt!                            14:02
 
 Jerry: Wie geht's?                           14:27</pre>
-</div>
-<br>
-    <p><input type="text" placeholder="New Message" class="pd-up-down-light" style="border-radius: 10px;">
-         <button class="btn" type="button">Send</button></p>
+   -->
+        </div>
+        <br>
+        <p><input type="text" placeholder="New Message" class="pd-up-down-light" style="border-radius: 10px;"
+                id="message">
+            <button onclick="send()" class="btn" type="button" id= "sendbutton">Send</button>
+        </p>
+
+        <script src = \js\chatscript.js>
+         /* function send() {
+
+                var node = document.createElement("li");
+
+               (document.getElementById('message').value);
+                document.getElementById("textmessage").appendChild(node);
+           } */
+        </script>
 </body>
 
 </html>
