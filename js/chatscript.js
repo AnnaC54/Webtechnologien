@@ -29,16 +29,18 @@ function getMessages() {
                 var date = new Date(data[i].time);
                 //console.log(date.getHours());
                 var messagebox = document.createElement("span");
-                var namebox = document.createElement("div");
-                var textbox = document.createElement("div");
-                var timebox = document.createElement("div");
+                var namebox = document.createElement("span");
+                var textbox = document.createElement("span");
+                var timebox = document.createElement("span");
                 messagebox.classList.add("messagebox");
-                textbox.classList.add("centerdiv");
-                timebox.classList.add("rightdiv");
-                namebox.classList.add("leftdiv");
+                
                 textbox.appendChild(namebox);
                 messagebox.appendChild(textbox);
                 messagebox.appendChild(timebox);
+                namebox.classList.add("leftdiv");
+                
+                textbox.classList.add("centerdiv");
+                timebox.classList.add("rightdiv");  
                 namebox.appendChild(document.createTextNode(data[i].from));
                 textbox.appendChild(document.createTextNode(data[i].msg));
                 timebox.appendChild(document.createTextNode(date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()));
@@ -75,6 +77,7 @@ let data = {
     message: document.getElementById('message').value,
     to: "Jerry"
 };
+document.getElementById('message').value = "";
 let jsonString = JSON.stringify(data); // Serialize as JSON
 xmlhttp1.send(jsonString); // Send JSON-data to server
 }
